@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  selfintroductionapp:
+    container_name: selfintroductionapp
+    build: .
+    ports:
+      - 3002:3002
+    tty: true
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    command: ["npm", "start"]

@@ -1,0 +1,12 @@
+.container {
+	background: white;
+	max-width: 1350px;
+}
+.input-search {
+	flex-grow: 1;
+	background-color: #90caf9;
+}
+img {
+	width: 100%;
+	height: auto;
+}
