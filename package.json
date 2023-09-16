@@ -38,7 +38,7 @@
 	},
 	"homepage": "https://itakumi.github.io/SelfIntroductionApp/",
 	"scripts": {
-		"predeploy": "npm run build",
+		"predeploy": "docker-compose build",
 		"deploy": "gh-pages -d build",
 		"start": "WATCHPACK_POLLING=true PORT=3002 react-scripts start",
 		"build": "react-scripts build",
