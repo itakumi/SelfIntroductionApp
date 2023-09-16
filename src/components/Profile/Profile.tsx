@@ -19,7 +19,7 @@ export const Profile = () => {
 	const fetchData = async () => {
 		setIsLoading(true);
 		axios
-			.get("http://localhost:3004/")
+			.get("https://selfintroductionapp-back.onrender.com/")
 			.then((response) => {
 				console.log(response);
 				// setPeople(response.data.file_contents);
@@ -83,7 +83,7 @@ export const Profile = () => {
 				};
 
 				// POSTリクエストを送信
-				const response = await axios.post("http://localhost:3004/delete", data);
+				const response = await axios.post("https://selfintroductionapp-back.onrender.com/delete", data);
 				// const response = await axios.post("http://localhost:3004/delete", data);
 
 				// リクエストが成功した場合の処理

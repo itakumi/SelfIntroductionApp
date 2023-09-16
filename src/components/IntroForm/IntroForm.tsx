@@ -106,7 +106,7 @@ export const IntroForm = (props: { language: string }) => {
 
 				// POSTリクエストを送信
 				const response = await axios.post(
-					"http://localhost:3004/add_item",
+					"https://selfintroductionapp-back.onrender.com/add_item",
 					data
 				);
 
